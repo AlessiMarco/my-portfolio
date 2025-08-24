@@ -1,4 +1,4 @@
-# 🌐 My Portfolio Website
+# ☀️ My Portfolio Website
 
 This is my personal portfolio website, built with **SvelteKit + TailwindCSS**.  
 It serves as a personal showcase and my first real case study.
