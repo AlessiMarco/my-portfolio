@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/manrope';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --font-sans: 'Manrope Variable', sans-serif;
+}
+
+/* Global Styles */
+@layer base {
+  html{
+    @apply font-sans;
+  }
+  h1{
+    @apply text-5xl md:text-9xl;
+  }
+  h2{
+    @apply text-base md:text-lg;
+  }  
+  h3{
+    @apply text-base md:text-5xl;
+  }   
+}
+
+/* Custom CCS class */
+@layer components {
+
+  .section {
+    @apply px-4 mt-24 md:px-24 md:mt-48;
+  }
+
+  .section-title {
+    @apply 
+      relative mb-10 pl-[100px] md:mb-56 
+      before:content-[''] before:absolute before:mb-10 before:w-16 before:h-px before:bg-black before:left-0 before:top-1/2 before:-translate-y-1/2;
+  }
+
+  .section-subtitle {
+    @apply 
+      relative font-bold pb-7 md:pb-9
+      after:content-[''] after:absolute after:w-full after:h-px after:bg-black after:left-0 after:bottom-0 mb-5 md:mb-10
+  }
+    
+    
+}
+
+
